@@ -1,3 +1,3 @@
 # LeetRacer
-## race other coders.
-### type code faster.
+##### race other coders.
+##### type code faster.
