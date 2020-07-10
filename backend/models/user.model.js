@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const { Schema } = mongoose
 const bcrypt = require('bcrypt')
 const { isEmail } = require('validator')
 const HASH_ROUNDS = 10
@@ -28,6 +28,7 @@ const userSchema = new Schema(
     twitter: String,
     github: String,
     bio: String,
+    profilePicture: String,
     dateJoined: {
       type: Date,
       default: Date.now
