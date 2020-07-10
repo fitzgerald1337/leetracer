@@ -32,9 +32,16 @@ const userSchema = new Schema(
       type: Date,
       default: Date.now
     },
-    numberOfRaces: Number,
-    avgRaceSpeed: Number,
-
+    stats: {
+      numberOfRaces: Number,
+      numberOfRacesWon: Number,
+      avgRaceSpeed: Number,
+      fastestRace: Number
+    },
+    preferences: {
+      colorScheme: String,
+      keyboardLayout: String
+    },
   }
 )
 
