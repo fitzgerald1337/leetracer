@@ -5,6 +5,7 @@ const path = require('path')
 const server = express()
 server.set('view engine', 'ejs')
 server.use(express.static(path.join(__dirname, 'public')))
+server.use()
 
 mongoose.connect('mongodb://localhost:27017/backend', {useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
